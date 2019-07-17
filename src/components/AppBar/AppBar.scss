@@ -1,0 +1,13 @@
+@import '../../styles/base/variables.scss';
+
+.app-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 4;
+  width: 100%;
+  min-height: $app-bar-height;
+}

@@ -1,0 +1,23 @@
+@import '../../styles/base/variables.scss';
+
+.cards-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+
+  @media (min-width: $desktop-breakpoint) {
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+  & > a {
+    flex-basis: 50%;
+    text-decoration: none;
+    color: white;
+
+    @media (min-width: $desktop-breakpoint) {
+      flex-basis: auto;
+    }
+  }
+}

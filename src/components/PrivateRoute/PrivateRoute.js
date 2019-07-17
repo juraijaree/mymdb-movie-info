@@ -27,7 +27,7 @@ export function PrivateRoute ({
 }
 
 PrivateRoute.propTypes = {
-  component: PropTypes.node,
+  component: PropTypes.func,
   token: PropTypes.string,
   redirectPath: PropTypes.string,
   componentProps: PropTypes.node

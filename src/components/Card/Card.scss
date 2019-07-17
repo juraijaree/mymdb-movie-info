@@ -1,0 +1,51 @@
+// .card-container {
+//   border: 1px solid red;
+//   width: 100%;
+//   position: relative;
+
+//   .card-title {
+//     position: absolute;
+//     color: white;
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.7), #00000000);
+//     width: 100%;
+//   }
+
+//   .card-thumbnail {
+//     max-height: 460px;
+//     overflow: hidden;
+//     width: 100%;
+//     margin: 0 auto;
+//   }
+// }
+
+.card-container {
+  width: 100%;
+  position: relative;
+
+  .card-title {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    background-image: linear-gradient(
+      to right,
+    red,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3),
+    #00000000
+    );
+    padding: 5px;
+
+    > * {
+      margin: 0;
+    }
+  }
+
+  .card-thumbnail {
+    padding: 5px;
+
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+  }
+}
