@@ -1,1 +1,3 @@
-export default (state) => state
+import { Map } from 'immutable'
+
+export default (state = Map()) => state

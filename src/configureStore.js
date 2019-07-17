@@ -7,8 +7,6 @@ import createRootReducer from 'reducers'
 
 export const history = createBrowserHistory()
 
-
-
 export const configureStore = (preloadedState) => {
   const middlewares = [
     ReduxThunk,

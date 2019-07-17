@@ -1,13 +1,16 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
-import { MovieIndexPage } from 'pages/movie'
+import PrivateRoute from 'components/PrivateRoute/PrivateRoute'
+import { MovieEditPage, MovieIndexPage, MovieNewPage, MovieShowPage } from 'pages/movie'
 
 function Routes () {
   return (
     <Switch>
-      <Route path='/' component={MovieIndexPage} exact />
-      <Route path='/test' render={() => (<h1>TEST PAGE</h1>)} />
+      <Route path={['/', '/movies']} component={MovieIndexPage} exact />
+      <PrivateRoute path='/new' component={MovieNewPage} exact />
+      <PrivateRoute path='/:id/edit' component={MovieEditPage} />
+      <Route path='/:id' component={MovieShowPage} exact/>
     </Switch>
   )
 }
